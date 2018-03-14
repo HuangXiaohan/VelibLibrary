@@ -5,7 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibLibrary", "VelibLibrary\VelibLibrary.csproj", "{35A78C81-C2FB-402D-A365-460F4187ECFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClient", "VelibClient\VelibClient.csproj", "{8792611D-2C9E-436E-964F-13BF82BB52C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientConsole", "VelibClient\VelibClientConsole.csproj", "{8792611D-2C9E-436E-964F-13BF82BB52C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35A78C81-C2FB-402D-A365-460F4187ECFE} = {35A78C81-C2FB-402D-A365-460F4187ECFE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientWinform", "VelibClientWinform\VelibClientWinform.csproj", "{31526A79-14C3-4770-A180-C1B4896337C6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{35A78C81-C2FB-402D-A365-460F4187ECFE} = {35A78C81-C2FB-402D-A365-460F4187ECFE}
 	EndProjectSection
@@ -24,6 +29,10 @@ Global
 		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31526A79-14C3-4770-A180-C1B4896337C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31526A79-14C3-4770-A180-C1B4896337C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31526A79-14C3-4770-A180-C1B4896337C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31526A79-14C3-4770-A180-C1B4896337C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
