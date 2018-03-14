@@ -1,0 +1,6 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\VelibLibrary\VelibClient\bin\Debug\VelibClient.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\VelibLibrary\VelibClient\bin\Debug\VelibClient.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\VelibLibrary\VelibClient\bin\Debug\VelibClient.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\VelibLibrary\VelibClient\obj\Debug\VelibClient.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\VelibLibrary\VelibClient\obj\Debug\VelibClient.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\VelibLibrary\VelibClient\obj\Debug\VelibClient.pdb
