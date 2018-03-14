@@ -24,14 +24,28 @@ namespace VelibClientWinform
         private void SearchStation_Click(object sender, EventArgs e)
         {
             string city = cityBox.Text;
-            stationBox.Text = client.searchStations(city);
+            
+            if(client.searchStations(city) == "-1")
+            {
+                Form2 form = new Form2();
+                form.Show();
+                form.errorText("No such city!");
+            }else
+                stationBox.Text = client.searchStations(city);
 
         }
 
         private void SearchBike_Click(object sender, EventArgs e)
         {
             string station = stationBox.Text;
-            bikeNum.Text = client.searchBikeNum(cityBox.Text, stationName.Text);
+
+            if(client.searchBikeNum(cityBox.Text, stationName.Text) == "-1")
+            {
+                Form2 form = new Form2();
+                form.Show();
+                form.errorText("No such station!");
+            }else
+                bikeNum.Text = client.searchBikeNum(cityBox.Text, stationName.Text);
 
         }
 

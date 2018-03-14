@@ -25,5 +25,10 @@ namespace VelibClientWinform
                 +"\n Input the name of a station in this city then click the button search behind,"
                 +"\n you'll get the number of available bikes of this station";
         }
+
+        public void errorText(string txt)
+        {
+            textBox.Text = txt;
+        }
     }
 }
