@@ -20,6 +20,7 @@ namespace VelibClient
             string station = Console.ReadLine();
             Console.WriteLine("The number of available bike is: "+ client.searchBikeNum(city,station));
             Console.ReadLine();
+
         }
     }
 }
