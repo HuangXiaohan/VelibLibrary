@@ -25,24 +25,26 @@ namespace VelibClient
                 }
                 Console.WriteLine("Input the city: ");
                 string city = Console.ReadLine();
-                if (client.searchStations(city) == "-1")
+                string stationResponse = client.searchStations(city);
+                if (stationResponse == "-1")
                 {
                     Console.WriteLine("No such city.");
                 }
                 else
                 {
-                    Console.WriteLine("The stations of " + city + " are: " + client.searchStations(city));
+                    Console.WriteLine("The stations of " + city + " are: " + stationResponse);
                 }
 
                 Console.WriteLine("Input the station: ");
                 string station = Console.ReadLine();
-                if (client.searchBikeNum(city, station) == "-1")
+                string bikeResponse = client.searchBikeNum(city, station);
+                if (bikeResponse == "-1")
                 {
                     Console.WriteLine("No such station.");
                 }
                 else
                 {
-                    Console.WriteLine("The number of available bike is: " + client.searchBikeNum(city, station));
+                    Console.WriteLine("The number of available bike is: " + bikeResponse);
                 }
                 Console.ReadLine();
             }
