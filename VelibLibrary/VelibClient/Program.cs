@@ -25,7 +25,7 @@ namespace VelibClient
                 }
                 Console.WriteLine("Input the city: ");
                 string city = Console.ReadLine();
-                string stationResponse = client.searchStations(city);
+                string stationResponse = client.SearchStations(city);
                 if (stationResponse == "-1")
                 {
                     Console.WriteLine("No such city.");
@@ -37,7 +37,7 @@ namespace VelibClient
 
                 Console.WriteLine("Input the station: ");
                 string station = Console.ReadLine();
-                string bikeResponse = client.searchBikeNum(city, station);
+                string bikeResponse = client.SearchBikeNum(city, station);
                 if (bikeResponse == "-1")
                 {
                     Console.WriteLine("No such station.");

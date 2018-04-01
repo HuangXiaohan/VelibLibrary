@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2b857646-3eab-481e-a293-27aff0af7301" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="90c62f13-fbff-413d-81d1-60a411add639" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,9 +22,9 @@
     <MetadataSource Address="http://localhost:8733/VelibService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="1cc81123-f64d-4cc4-91c7-9ca10451b15e" SourceId="1" SourceUrl="http://localhost:8733/VelibService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="cd3f5616-8008-4b76-961e-b2b46bc981b1" SourceId="1" SourceUrl="http://localhost:8733/VelibService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9dbbb589-af67-48f4-99c4-8d194717018b" SourceId="1" SourceUrl="http://localhost:8733/VelibService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="9bd9f974-63f5-4724-9087-4dd17f6f047f" SourceId="1" SourceUrl="http://localhost:8733/VelibService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="7745d035-327d-4d88-adf1-9de7f224b9b3" SourceId="1" SourceUrl="http://localhost:8733/VelibService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="891f255a-4306-4010-a2ca-ac900ace155f" SourceId="1" SourceUrl="http://localhost:8733/VelibService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
