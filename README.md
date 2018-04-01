@@ -34,7 +34,7 @@ Si le ville et de la station n'est pas correcte, une fenêtre de notification vo
 Le cache du nombre de vélo de chaque station mis à jour si le temps dépasse 5 mins. 
 
 * Application console.
-1. help : affiche une aide concernant la liste des commandes disponibles.
+1. help : affiche une description de ce application.
 2. cities : affiche la liste des contrats disponibles.
 3. demande le nom de ville, et affiche la liste des stations du contrat passé en paramètre.
 4. demande le nom de station,et affiche le nombre de vélos disponibles aux stations contenant du contrat.
