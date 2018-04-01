@@ -20,7 +20,8 @@ namespace VelibClientWinform
         public void helpText()
         {
             textBox.Text = "This application is for searching the velib information of each city. "
-                +"\n Input the name of a city then click the button search behind,"
+                + "\n Search the contract you'll get the list of the cities,"
+                + "\n Input the name of a city then click the button search behind,"
                 +"\n you'll get all the stations of this city"
                 +"\n Input the name of a station in this city then click the button search behind,"
                 +"\n you'll get the number of available bikes of this station";

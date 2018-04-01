@@ -37,7 +37,7 @@ namespace VelibClient
                 Console.WriteLine("The stations of " + city + " are: " + stationResponse);
             }
 
-            Console.WriteLine("Input the station: ");
+            Console.WriteLine("\n\nInput the station: ");
             string station = Console.ReadLine();
             string bikeResponse = client.SearchBikeNum(city, station);
             if (bikeResponse == "-1")
