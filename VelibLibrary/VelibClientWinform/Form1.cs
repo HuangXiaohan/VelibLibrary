@@ -16,7 +16,6 @@ namespace VelibClientWinform
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         VelibServiceClient client = new VelibServiceClient();
@@ -56,6 +55,11 @@ namespace VelibClientWinform
             Form2 form = new Form2();
             form.Show();
             form.helpText();
+        }
+
+        private void searchContract_Click(object sender, EventArgs e)
+        {
+            contractBox.Text = client.getCities();
         }
     }
 }

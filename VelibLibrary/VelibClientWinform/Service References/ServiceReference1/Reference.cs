@@ -15,6 +15,12 @@ namespace VelibClientWinform.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IVelibService", SessionMode=System.ServiceModel.SessionMode.NotAllowed)]
     public interface IVelibService {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/getCities", ReplyAction="http://tempuri.org/IVelibService/getCitiesResponse")]
+        string getCities();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/getCities", ReplyAction="http://tempuri.org/IVelibService/getCitiesResponse")]
+        System.Threading.Tasks.Task<string> getCitiesAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SearchStations", ReplyAction="http://tempuri.org/IVelibService/SearchStationsResponse")]
         string SearchStations(string city);
         
@@ -53,6 +59,14 @@ namespace VelibClientWinform.ServiceReference1 {
         
         public VelibServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public string getCities() {
+            return base.Channel.getCities();
+        }
+        
+        public System.Threading.Tasks.Task<string> getCitiesAsync() {
+            return base.Channel.getCitiesAsync();
         }
         
         public string SearchStations(string city) {
