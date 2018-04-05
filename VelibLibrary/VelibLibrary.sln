@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLibrary", "EventLibrary\EventLibrary.csproj", "{B17F7337-3EF4-44F5-8D5E-1DE57ADE9FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsClient", "EventsClient\EventsClient.csproj", "{C5193E8C-8F16-4B4D-B38E-20C27A2F40C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsLibHost", "EventsLibHost\EventsLibHost.csproj", "{A850E029-0E0D-47B4-B5E1-C3A27C9E1EF6}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibLibrary", "VelibLibrary\VelibLibrary.csproj", "{35A78C81-C2FB-402D-A365-460F4187ECFE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientConsole", "VelibClient\VelibClientConsole.csproj", "{8792611D-2C9E-436E-964F-13BF82BB52C7}"
-	ProjectSection(ProjectDependencies) = postProject
-		{35A78C81-C2FB-402D-A365-460F4187ECFE} = {35A78C81-C2FB-402D-A365-460F4187ECFE}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibClientWinform", "VelibClientWinform\VelibClientWinform.csproj", "{31526A79-14C3-4770-A180-C1B4896337C6}"
-	ProjectSection(ProjectDependencies) = postProject
-		{35A78C81-C2FB-402D-A365-460F4187ECFE} = {35A78C81-C2FB-402D-A365-460F4187ECFE}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B17F7337-3EF4-44F5-8D5E-1DE57ADE9FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17F7337-3EF4-44F5-8D5E-1DE57ADE9FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17F7337-3EF4-44F5-8D5E-1DE57ADE9FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17F7337-3EF4-44F5-8D5E-1DE57ADE9FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5193E8C-8F16-4B4D-B38E-20C27A2F40C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5193E8C-8F16-4B4D-B38E-20C27A2F40C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5193E8C-8F16-4B4D-B38E-20C27A2F40C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5193E8C-8F16-4B4D-B38E-20C27A2F40C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A850E029-0E0D-47B4-B5E1-C3A27C9E1EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A850E029-0E0D-47B4-B5E1-C3A27C9E1EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A850E029-0E0D-47B4-B5E1-C3A27C9E1EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A850E029-0E0D-47B4-B5E1-C3A27C9E1EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35A78C81-C2FB-402D-A365-460F4187ECFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35A78C81-C2FB-402D-A365-460F4187ECFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A78C81-C2FB-402D-A365-460F4187ECFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A78C81-C2FB-402D-A365-460F4187ECFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8792611D-2C9E-436E-964F-13BF82BB52C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31526A79-14C3-4770-A180-C1B4896337C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31526A79-14C3-4770-A180-C1B4896337C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31526A79-14C3-4770-A180-C1B4896337C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31526A79-14C3-4770-A180-C1B4896337C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
