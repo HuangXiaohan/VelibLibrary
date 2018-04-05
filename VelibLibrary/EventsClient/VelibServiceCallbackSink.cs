@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace EventsClient
 {
-    class VelibServiceCallbackSink
+    class VelibServiceCallbackSink : VelibServiceReference.IVelibServiceCallback
     {
+        public void GottenBikeNum(string city, string station, string num)
+        {
+            Console.WriteLine("City : " + city);
+            Console.WriteLine("Station : " + station);
+            Console.WriteLine("Bike Number : " + num);
+        }
+
+        public void GottenFinished()
+        {
+            Console.WriteLine("Operation completed");
+        }
     }
 }
