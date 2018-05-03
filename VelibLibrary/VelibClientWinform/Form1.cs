@@ -23,7 +23,7 @@ namespace VelibClientWinform
         private void SearchStation_Click(object sender, EventArgs e)
         {
             string city = cityBox.Text;
-            string stationResponse = client.SearchStations(city);
+            string stationResponse = client.searchStations(city);
 
             if (stationResponse == "-1")
             {
@@ -38,7 +38,7 @@ namespace VelibClientWinform
         private void SearchBike_Click(object sender, EventArgs e)
         {
             string station = stationBox.Text;
-            string bikeResponse = client.SearchBikeNum(cityBox.Text, stationName.Text);
+            string bikeResponse = client.searchBikeNum(cityBox.Text, stationName.Text);
 
             if (bikeResponse == "-1")
             {

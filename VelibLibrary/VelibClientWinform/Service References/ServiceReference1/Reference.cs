@@ -12,26 +12,26 @@ namespace VelibClientWinform.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IVelibService", SessionMode=System.ServiceModel.SessionMode.NotAllowed)]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IVelibService")]
     public interface IVelibService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/searchStations", ReplyAction="http://tempuri.org/IVelibService/searchStationsResponse")]
+        string searchStations(string city);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/searchStations", ReplyAction="http://tempuri.org/IVelibService/searchStationsResponse")]
+        System.Threading.Tasks.Task<string> searchStationsAsync(string city);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/searchBikeNum", ReplyAction="http://tempuri.org/IVelibService/searchBikeNumResponse")]
+        string searchBikeNum(string city, string station);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/searchBikeNum", ReplyAction="http://tempuri.org/IVelibService/searchBikeNumResponse")]
+        System.Threading.Tasks.Task<string> searchBikeNumAsync(string city, string station);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/getCities", ReplyAction="http://tempuri.org/IVelibService/getCitiesResponse")]
         string getCities();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/getCities", ReplyAction="http://tempuri.org/IVelibService/getCitiesResponse")]
         System.Threading.Tasks.Task<string> getCitiesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SearchStations", ReplyAction="http://tempuri.org/IVelibService/SearchStationsResponse")]
-        string SearchStations(string city);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SearchStations", ReplyAction="http://tempuri.org/IVelibService/SearchStationsResponse")]
-        System.Threading.Tasks.Task<string> SearchStationsAsync(string city);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SearchBikeNum", ReplyAction="http://tempuri.org/IVelibService/SearchBikeNumResponse")]
-        string SearchBikeNum(string city, string station);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IVelibService/SearchBikeNum", ReplyAction="http://tempuri.org/IVelibService/SearchBikeNumResponse")]
-        System.Threading.Tasks.Task<string> SearchBikeNumAsync(string city, string station);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -61,28 +61,28 @@ namespace VelibClientWinform.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
+        public string searchStations(string city) {
+            return base.Channel.searchStations(city);
+        }
+        
+        public System.Threading.Tasks.Task<string> searchStationsAsync(string city) {
+            return base.Channel.searchStationsAsync(city);
+        }
+        
+        public string searchBikeNum(string city, string station) {
+            return base.Channel.searchBikeNum(city, station);
+        }
+        
+        public System.Threading.Tasks.Task<string> searchBikeNumAsync(string city, string station) {
+            return base.Channel.searchBikeNumAsync(city, station);
+        }
+        
         public string getCities() {
             return base.Channel.getCities();
         }
         
         public System.Threading.Tasks.Task<string> getCitiesAsync() {
             return base.Channel.getCitiesAsync();
-        }
-        
-        public string SearchStations(string city) {
-            return base.Channel.SearchStations(city);
-        }
-        
-        public System.Threading.Tasks.Task<string> SearchStationsAsync(string city) {
-            return base.Channel.SearchStationsAsync(city);
-        }
-        
-        public string SearchBikeNum(string city, string station) {
-            return base.Channel.SearchBikeNum(city, station);
-        }
-        
-        public System.Threading.Tasks.Task<string> SearchBikeNumAsync(string city, string station) {
-            return base.Channel.SearchBikeNumAsync(city, station);
         }
     }
 }

@@ -161,6 +161,7 @@
             // contractBox
             // 
             this.contractBox.Location = new System.Drawing.Point(94, 55);
+            this.contractBox.MaxLength = 50000000;
             this.contractBox.Multiline = true;
             this.contractBox.Name = "contractBox";
             this.contractBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
